@@ -1,0 +1,333 @@
+body {
+  background: rgb(238, 238, 238);
+}
+
+
+.addNewUser {
+  visibility: hidden;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 50px 50px 80px;
+  grid-template-areas:
+    'name inputName groupSelect'
+    'seName inputSeName .'
+    'selectInput mobileInput addButton'
+    'telephoneHead telephoneHead telephoneHead'
+    'selectedInput telephoneNum deleteButton';
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+}
+
+
+.addNewUserGroupName{
+  border-radius: 5px;
+  height: 26px;
+}
+.buttonsAddCloseDel {
+  visibility: hidden;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 2px;
+  grid-row-gap: 2px;
+}
+
+.MobilePhoneSelectData {
+  grid-area: selectedInput;
+  margin-right: 10px;
+}
+
+.MobilePhoneInputData {
+  grid-area: telephoneNum;
+}
+
+.mobileDelete {
+  grid-area: deleteButton;
+}
+
+
+.mobile {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 70vh;
+  grid-area: telephoneHead;
+
+}
+
+
+
+input:invalid {
+  border: 1px solid red;
+}
+
+input:valid {
+  border: 1px solid black;
+
+}
+
+.addNewUserButtons {
+  display: grid;
+  grid-template-columns: 1fr 1fr
+}
+
+.Users {
+  margin-top: 30px;
+  background: rgb(238, 238, 238);
+  overflow-y: scroll;
+  overflow-x: hidden;
+  width: 1fr;
+  height: 80vh;
+}
+
+.addNewUserbtn_ {
+  display: grid;
+}
+
+.addNewUserButton {
+  /* height: 30px;
+  width: 150px; */
+  /* grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 4;
+  grid-row-end: 4; */
+  align-self: end;
+  justify-self: start;
+}
+
+.SearchUserInput {
+  border-radius: 5px;
+  height: 30px;
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 4;
+}
+
+.UserButton {
+  border: 2px solid green;
+  background: white;
+  border-radius: 5px;
+  margin-top: 8px;
+}
+
+.UserButton:hover {
+  cursor: pointer
+}
+
+.groupSelect{
+  width: 70px;
+  grid-area: groupSelect;
+  justify-self: center;
+  align-self: center;
+  width: 60%;
+  height: 25px;
+  border: solid 1px #ccc;
+  border-radius: 10px;
+}
+.mainBlock {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+ grid-template-rows: 94vh;
+}
+
+.addNewUserButton {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  padding: .5em 2em;
+  outline: none;
+  border-width: 2px 0;
+  border-style: solid none;
+  border-color: #FDBE33 #000 #D77206;
+  border-radius: 6px;
+  background: linear-gradient(#F3AE0F, #E38916) #E38916;
+  transition: 0.2s;
+  width: 150px;
+  height: 30px;
+}
+
+.deleteNewUserGroupSelect{
+  border-radius: 5px;
+    height: 30px;
+}
+.addNewUserButton:hover {
+  background: linear-gradient(#f5ae00, #f59500) #f5ae00;
+}
+
+.addNewUserButton:active {
+  background: linear-gradient(#f59500, #f5ae00) #f59500;
+}
+
+
+.deleteUserBtn {
+
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 4;
+}
+
+
+
+.telephonesSpan {
+  display: flex;
+  justify-content: center;
+}
+
+.addNewUserNameSpan {
+  color: black;
+  grid-area: name;
+  justify-self: end;
+  align-self: center;
+}
+
+.addNewUserSeNameSpan {
+  color: black;
+  grid-area: seName;
+  justify-self: end;
+  align-self: center;
+}
+
+.addNewUserNameDiv {
+  margin-top: 20px;
+}
+
+.addNewUserSeNameDiv {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+.addNewUserName {
+  width: 90%;
+  height: 25px;
+  border: solid 1px #ccc;
+  border-radius: 10px;
+  grid-area: inputName;
+  justify-self: start;
+  align-self: center;
+}
+
+
+
+.addNewUserSeName {
+  width: 90%;
+  height: 25px;
+  border: solid 1px #ccc;
+  border-radius: 10px;
+
+  justify-self: start;
+  align-self: center;
+  grid-area: inputSeName
+}
+
+.mobileInput {
+  grid-area: mobileInput;
+  justify-items: center;
+  width: 291.88px;
+  width: 90%;
+  height: 25px;
+  border: solid 1px #ccc;
+  border-radius: 10px;
+}
+
+.selectInputMobileUser {
+  margin-bottom: 10px;
+}
+
+.mobileSelect {
+  grid-area: selectInput;
+  justify-self: end;
+  width: 60%;
+  height: 29px;
+  border: solid 1px #ccc;
+  border-radius: 10px;
+
+}
+
+.addNewPhone {
+  height: 29px;
+  width: 29px;
+  grid-area: addButton;
+  justify-self: start;
+}
+
+
+
+
+.AddSaveBtn {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 4;
+  grid-row-end: 4;
+}
+
+
+.closeNewUserBtn {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 4;
+  grid-row-end: 4;
+}
+
+
+.mobileDelete {
+  cursor: pointer;
+  border-radius: 3px;
+  background: linear-gradient(rgb(199, 187, 160), rgb(241, 239, 236)), rgb(216, 209, 200);
+}
+
+.mobileDelete:hover {
+  background: linear-gradient(#c8ccc7, #c5cac3) #b6bbb5;
+}
+
+.mobileDelete:active {
+  background: linear-gradient(#c6d1c8, #c6d3c9) #c5cfc8;
+}
+
+.MobilePhone {
+  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.UserButton {
+  display: inline-block;
+  text-decoration: none;
+  padding: .5em 2em;
+  outline: none;
+  border-width: 1px 0;
+  border-style: solid none;
+  border-color: green;
+  border-radius: 6px;
+  background: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)), rgb(255, 255, 255);
+  transition: 0.2s;
+}
+
+.UserButton:hover {
+  background: linear-gradient(#c8ccc7, #c5cac3) #b6bbb5;
+}
+
+.UserButton:active {
+  background: linear-gradient(#c6d1c8, #c6d3c9) #c5cfc8;
+}
+
+.AddSaveBtn {
+  width: 150px;
+  height: 30px;
+  align-self: center;
+  justify-self: end;
+}
+
+.closeNewUserBtn {
+  width: 150px;
+  height: 30px;
+  align-self: center;
+  justify-self: start;
+}
+
+.deleteUserBtn {
+  width: 150px;
+  height: 30px;
+  align-self: center;
+  justify-self: center;
+}
